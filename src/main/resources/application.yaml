@@ -1,0 +1,27 @@
+
+
+spring:
+  dataSource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/cms_test
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+server:
+  port: 8081
+  tomcat:
+    uri-encoding: UTF-8
+logging:
+  level:
+    root: debug
+
